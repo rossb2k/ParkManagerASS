@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ground
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,31 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: sky
+    uniqueID: 1838437339
+    locked: 0
+  - name: clouds
+    uniqueID: 2897370151
+    locked: 0
+  - name: mountains
+    uniqueID: 2237177561
+    locked: 0
+  - name: trees back
+    uniqueID: 2706091067
+    locked: 0
+  - name: trees mid
+    uniqueID: 2259557763
+    locked: 0
+  - name: trees front
+    uniqueID: 1874350001
+    locked: 0
+  - name: game
+    uniqueID: 2247678331
+    locked: 0
+  - name: ground
+    uniqueID: 219614721
+    locked: 0
+  - name: player
+    uniqueID: 3651564565
     locked: 0
