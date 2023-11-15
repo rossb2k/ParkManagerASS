@@ -25,7 +25,7 @@ public class parallax : MonoBehaviour
         transform.position += new Vector3(deltaMovement.x * parallaxSpeed, 0);
         lastCameraPosition = cameraTransform.position;
 
-        if (cameraTransform.position.x - cameraTransform.position.x >= textureUnitSizeX){
+        if (Mathf.Abs(cameraTransform.position.x - cameraTransform.position.x) >= textureUnitSizeX){
             float offsetPositionX = (cameraTransform.position.x - transform.position.x) % textureUnitSizeX;
             transform.position = new Vector3(cameraTransform.position.x + offsetPositionX, transform.position.y);
         }
