@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 05fb10b3f22accf4fb54b07983c050e5
+guid: f0bc79cd71c6bce42acf0565f59f05f8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: protag_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 254.5
+        width: 128
+        height: 254.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5082d87f5d326314a81930a3ba832cd1
+      internalID: -822729059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: protag_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 254.5
+        width: 128
+        height: 254.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6e679e391b60348bbf4e6fe469d2b2
+      internalID: 2070485343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: protag_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 254.5
+        width: 128
+        height: 254.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c890809fff4e3344b44c540d60dc032
+      internalID: 1479749566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: protag_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 128
+        height: 254.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f07ba39df89194cbed53d692019cda
+      internalID: 1497420007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: protag_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0.5
+        width: 128
+        height: 254.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ef6b4c2ca8bb342ad7eb89ddf5be3d
+      internalID: -540696272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: protag_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0.5
+        width: 128
+        height: 254.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33aee79b7beec1d458e2aedb730697c9
+      internalID: 16793814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +258,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      protag_0: -822729059
+      protag_1: 2070485343
+      protag_2: 1479749566
+      protag_3: 1497420007
+      protag_4: -540696272
+      protag_5: 16793814
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
