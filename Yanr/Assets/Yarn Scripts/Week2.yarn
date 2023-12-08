@@ -1,0 +1,74 @@
+﻿title: WeekTwoBigDecisions
+---
+-> scene visitor_center
+
+You enter the bustling Visitor Center, ready to make impactful decisions for The Park's future. Emily awaits you, reports in hand.
+
+-> dialogue Emily
+
+"Good to see you again! Week two is critical. What's our primary focus this time?"
+
+=== Inner Dialogue Choices ===
+
+* [[Boost Tourism Events]]:
+    * -> set decision_week2 = "tourism"
+    * -> goto WeekTwoDecisionsMade
+
+* [[Expand Conservation Programs]]:
+    * -> set decision_week2 = "conservation"
+    * -> goto WeekTwoDecisionsMade
+
+* [[Balanced Approach with Events and Conservation]]:
+    * -> set decision_week2 = "balanced"
+    * -> goto WeekTwoDecisionsMade
+
+=== WeekTwoDecisionsMade ===
+
+-> dialogue Emily
+
+Emily awaits your decision, "What's our strategy for this week?"
+
+* [[We'll boost tourism events.]]:
+  * -> goto BoostTourismEvents
+
+* [[Let's expand conservation programs.]]:
+  * -> goto ExpandConservationPrograms
+
+* [[We'll take a balanced approach with events and conservation.]]:
+  * -> goto BalancedApproach
+
+=== BoostTourismEvents ===
+
+-> dialogue
+
+You decide to focus on boosting tourism events. "Let's create memorable experiences to draw more visitors."
+
+-> dialogue Emily
+
+Emily nods, "Exciting events can indeed attract crowds. Let's ensure they align with our conservation goals."
+
+-> end
+
+=== ExpandConservationPrograms ===
+
+-> dialogue
+
+You choose to expand conservation programs. "It's crucial to strengthen our efforts in preserving the park's natural beauty."
+
+-> dialogue Emily
+
+Emily agrees, "Conservation should always be at the forefront. Let's make a positive impact."
+
+-> end
+
+=== BalancedApproach ===
+
+-> dialogue
+
+You opt for a balanced approach, combining events and conservation. "We'll attract visitors while maintaining our commitment to conservation."
+
+-> dialogue Emily
+
+Emily remarks, "A balanced strategy is wise. Let's ensure both aspects complement each other."
+
+-> end

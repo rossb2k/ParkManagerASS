@@ -1,0 +1,75 @@
+﻿title: WeekThreeBigDecisions
+---
+-> scene visitor_center
+
+You step into the bustling Visitor Center, ready to make pivotal decisions for The Park's future. Emily stands by with reports in hand.
+
+-> dialogue Emily
+
+"Welcome back! Week three is crucial. What will be our main focus this time?"
+
+=== Inner Dialogue Choices ===
+
+* [[Promote Large-Scale Tourism Events]]:
+    * -> set decision_week3 = "tourism"
+    * -> goto WeekThreeDecisionsMade
+
+* [[Invest Heavily in Advanced Conservation Programs]]:
+    * -> set decision_week3 = "conservation"
+    * -> goto WeekThreeDecisionsMade
+
+* [[Integrated Strategy with Balanced Tourism and Conservation]]:
+    * -> set decision_week3 = "balanced"
+    * -> goto WeekThreeDecisionsMade
+
+=== WeekThreeDecisionsMade ===
+
+-> dialogue Emily
+
+Emily awaits your decision, "What's our plan for this crucial week?"
+
+* [[We'll promote large-scale tourism events.]]:
+  * -> goto PromoteLargeScaleTourismEvents
+
+* [[We'll invest heavily in advanced conservation programs.]]:
+  * -> goto InvestInAdvancedConservationPrograms
+
+* [[We'll follow an integrated strategy with balanced tourism and conservation.]]:
+  * -> goto IntegratedStrategy
+
+=== PromoteLargeScaleTourismEvents ===
+
+-> dialogue
+
+You decide to focus on promoting large-scale tourism events. "Let's create buzz and draw visitors from far and wide."
+
+-> dialogue Emily
+
+Emily nods, "Exciting events can make a significant impact on tourism. Let's ensure they align with our conservation goals."
+
+-> end
+
+=== InvestInAdvancedConservationPrograms ===
+
+-> dialogue
+
+You choose to invest heavily in advanced conservation programs. "It's time to take bold steps to ensure the long-term health of the park."
+
+-> dialogue Emily
+
+Emily agrees, "A strong emphasis on conservation is crucial. Let's make a lasting positive impact."
+
+-> end
+
+=== IntegratedStrategy ===
+
+-> dialogue
+
+You opt for an integrated strategy, balancing tourism and conservation. "We'll attract visitors while maintaining our commitment to conservation."
+
+-> dialogue Emily
+
+Emily remarks, "A balanced strategy is wise. Let's ensure both aspects complement each other."
+
+-> end
+

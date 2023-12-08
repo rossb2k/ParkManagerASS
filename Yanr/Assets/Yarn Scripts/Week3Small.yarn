@@ -1,0 +1,84 @@
+﻿title: WeekThreeSmallDecisions
+---
+-> dialogue Emily
+
+"Hello again. Week three's small decisions are on the table. Over."
+
+-> scene radio_transmission
+
+---
+title: SmallDecision1
+---
+dialogue:
+
+"Our first small decision involves hosting a live music concert in the park. What's your stance on this?"
+
+---
+title: InnerDialogueChoices1
+---
+* [[Support the live music concert for tourism]]:
+    * -> set small_decision_week3 = "tourism"
+    * -> goto WeekThreeSmallDecisionMade
+
+* [[Prioritize conservation, skip the live music concert]]:
+    * -> set small_decision_week3 = "conservation"
+    * -> goto WeekThreeSmallDecisionMade
+
+---
+title: WeekThreeSmallDecisionMade
+---
+dialogue:
+
+"Decision noted. Let's move on."
+
+---
+title: SmallDecision2
+---
+dialogue:
+
+"Next, we're considering allowing vendors to set up food stalls. How do you want to proceed?"
+
+---
+title: InnerDialogueChoices2
+---
+* [[Allow food stalls for tourism]]:
+    * -> set small_decision_week3 = "tourism"
+    * -> goto WeekThreeSmallDecisionMade2
+
+* [[Restrict food stalls to preserve the environment]]:
+    * -> set small_decision_week3 = "conservation"
+    * -> goto WeekThreeSmallDecisionMade2
+
+---
+title: WeekThreeSmallDecisionMade2
+---
+dialogue:
+
+"Thanks for your input. One more to go."
+
+---
+title: SmallDecision3
+---
+dialogue:
+
+"Our final decision is about introducing guided night tours. How do you want to proceed?"
+
+---
+title: InnerDialogueChoices3
+---
+* [[Introduce guided night tours for tourism]]:
+    * -> set small_decision_week3 = "tourism"
+    * -> goto WeekThreeSmallDecisionMade3
+
+* [[Prioritize conservation, skip the guided night tours]]:
+    * -> set small_decision_week3 = "conservation"
+    * -> goto WeekThreeSmallDecisionMade3
+
+---
+title: WeekThreeSmallDecisionMade3
+---
+dialogue:
+
+"Got it. That wraps up the small decisions for this week. Back to you."
+
+-> end

@@ -1,0 +1,75 @@
+﻿title: WeekTwoSmallDecisions
+---
+-> dialogue Emily
+
+"Hey, it's Emily. Week two's small decisions are up for discussion. Over."
+
+-> scene radio_transmission
+
+=== SmallDecision1 ===
+
+-> dialogue
+
+"Our first small decision involves setting up a temporary art exhibition in the park. What's your preference?"
+
+=== Inner Dialogue Choices ===
+
+* [[Support the art exhibition for tourism]]:
+    * -> set small_decision_week2 = "tourism"
+    * -> goto WeekTwoSmallDecisionMade
+
+* [[Prioritize conservation, skip the art exhibition]]:
+    * -> set small_decision_week2 = "conservation"
+    * -> goto WeekTwoSmallDecisionMade
+
+=== WeekTwoSmallDecisionMade ===
+
+-> dialogue
+
+"Decision noted. Moving on."
+
+=== SmallDecision2 ===
+
+-> dialogue
+
+"Next, we're considering allowing limited camping in a scenic area. What's your stance on this?"
+
+=== Inner Dialogue Choices ===
+
+* [[Allow limited camping for tourism]]:
+    * -> set small_decision_week2 = "tourism"
+    * -> goto WeekTwoSmallDecisionMade2
+
+* [[Restrict camping to preserve the area]]:
+    * -> set small_decision_week2 = "conservation"
+    * -> goto WeekTwoSmallDecisionMade2
+
+=== WeekTwoSmallDecisionMade2 ===
+
+-> dialogue
+
+"Thanks for your input. One more to go."
+
+=== SmallDecision3 ===
+
+-> dialogue
+
+"Our final decision is about organizing a nature photography competition. How do you want to proceed?"
+
+=== Inner Dialogue Choices ===
+
+* [[Organize the photography competition for tourism]]:
+    * -> set small_decision_week2 = "tourism"
+    * -> goto WeekTwoSmallDecisionMade3
+
+* [[Prioritize conservation, skip the photography competition]]:
+    * -> set small_decision_week2 = "conservation"
+    * -> goto WeekTwoSmallDecisionMade3
+
+=== WeekTwoSmallDecisionMade3 ===
+
+-> dialogue
+
+"Got it. That wraps up the small decisions for this week. Back to you."
+
+-> end
