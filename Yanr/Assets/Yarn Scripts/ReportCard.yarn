@@ -1,0 +1,97 @@
+﻿title: ReportCard
+---
+-> scene visitor_center
+
+You stand in the quiet Visitor Center, reviewing the outcomes of your decisions. Emily approaches, ready to discuss the report card.
+
+-> dialogue Emily
+
+"Let's review how we did in shaping the destiny of The Park."
+
+-> dialogue Emily
+
+<- if decision_week1 == "tourism" ->
+    "In Week 1, your focus on tourism infrastructure aimed to attract more visitors. It brought in a surge of tourists, but the impact on local habitats was noticeable."
+<- elseif decision_week1 == "conservation" ->
+    "In Week 1, your emphasis on wildlife conservation initiatives had a positive impact on the park's ecosystems. However, immediate tourism decreased."
+<- else ->
+    "In Week 1, your balanced approach to controlled tourism expansion with conservation measures showed promise. Striking that delicate balance paid off to some extent."
+<- endif ->
+
+-> dialogue Emily
+
+<- if small_decision_week1 == "tourism" ->
+    "The small decisions during Week 1, favoring tourism, brought short-term gains in visitor satisfaction. However, the environmental impact was a concern."
+<- elseif small_decision_week1 == "conservation" ->
+    "Week 1's small decisions, focusing on conservation, contributed to long-term ecological health. Still, there was a noticeable drop in immediate tourism."
+<- else ->
+    "Balancing small decisions in Week 1 showcased your commitment to both tourism and conservation. It set the tone for a delicate coexistence."
+<- endif ->
+
+-> dialogue Emily
+
+<- if decision_week2 == "tourism" ->
+    "Week 2's big decision, promoting large-scale tourism events, generated significant buzz. However, it strained the delicate balance with conservation efforts."
+<- elseif decision_week2 == "conservation" ->
+    "Investing heavily in advanced conservation programs during Week 2 showed a commitment to the park's long-term health. Immediate tourism impact was moderate."
+<- else ->
+    "Opting for an integrated strategy in Week 2 balanced tourism and conservation. It maintained visitor interest while safeguarding the park's ecosystems."
+<- endif ->
+
+-> dialogue Emily
+
+<- if small_decision_week2 == "tourism" ->
+    "Week 2's small decisions, favoring tourism, created a lively atmosphere. However, the strain on the park's ecosystems became more evident."
+<- elseif small_decision_week2 == "conservation" ->
+    "Focusing on conservation in Week 2's small decisions contributed to the park's ecological sustainability. Yet, there was a decline in immediate tourism."
+<- else ->
+    "Balancing small decisions in Week 2 showcased your commitment to both tourism and conservation, maintaining equilibrium amidst challenges."
+<- endif ->
+
+-> dialogue Emily
+
+<- if decision_week3 == "tourism" ->
+    "Week 3's big decision, promoting large-scale tourism events again, continued to draw crowds. However, the strain on conservation efforts intensified."
+<- elseif decision_week3 == "conservation" ->
+    "Investing heavily in advanced conservation programs during Week 3 showed sustained dedication to the park's long-term health. Immediate tourism impact remained moderate."
+<- else ->
+    "Opting for an integrated strategy in Week 3 balanced tourism and conservation, maintaining visitor interest while safeguarding the park's ecosystems."
+<- endif ->
+
+-> dialogue Emily
+
+<- if small_decision_week3 == "tourism" ->
+    "Week 3's small decisions, favoring tourism, kept the atmosphere vibrant. However, the strain on the park's ecosystems reached a critical point."
+<- elseif small_decision_week3 == "conservation" ->
+    "Focusing on conservation in Week 3's small decisions contributed to the park's ecological sustainability. Immediate tourism impact remained steady."
+<- else ->
+    "Balancing small decisions in Week 3 showcased your commitment to both tourism and conservation, navigating challenges with finesse."
+<- endif ->
+
+-> set overall_success = 0
+
+<- if (decision_week1 == "balanced" or decision_week1 == "conservation") and (small_decision_week1 == "balanced" or small_decision_week1 == "conservation") ->
+    -> set overall_success += 1
+<- endif ->
+
+<- if (decision_week2 == "balanced" or decision_week2 == "conservation") and (small_decision_week2 == "balanced" or small_decision_week2 == "conservation") ->
+    -> set overall_success += 1
+<- endif ->
+
+<- if (decision_week3 == "balanced" or decision_week3 == "conservation") and (small_decision_week3 == "balanced" or small_decision_week3 == "conservation") ->
+    -> set overall_success += 1
+<- endif ->
+
+-> dialogue Emily
+
+<- if overall_success == 3 ->
+    "Congratulations! Your well-balanced decisions have steered The Park toward a harmonious future. Both tourism and conservation thrive."
+<- elseif overall_success >= 2 ->
+    "Good job! Your efforts in finding a balance have yielded positive results. The Park is on a stable path, with both aspects considered."
+<- else ->
+    "Challenges persist. Striking the right balance between tourism and conservation remains a delicate task. The future of The Park is uncertain."
+<- endif ->
+
+-> end
+
+===
