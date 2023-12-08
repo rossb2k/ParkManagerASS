@@ -1,0 +1,46 @@
+﻿title: Start
+---
+-> scene bedroom
+
+The sun wakes you up as its warm rays pierce through your window. Today marks the beginning of a new chapter in your life—you're about to take on the role of head of Park development.
+
+-> dialogue
+Inner Thoughts: You've heard about the challenges The Park has been facing lately. The dwindling numbers of tourists have cast a shadow over its once-thriving beauty. However, the recent government emphasis on conservation efforts within the park brings a renewed sense of hope.
+
+-> dialogue
+Inner Thoughts: Your mentor's words echo in your mind, "It's a delicate balance between attracting visitors and preserving the park's natural wonders."
+
+---
+title: Hallway
+---
+As you step out of your bedroom, the familiar creak of the wooden floor greets you. The hallway is adorned with pictures of the park's stunning landscapes, a testament to its former glory.
+
+-> dialogue
+Inner Thoughts: You know that the decisions you make in the coming weeks will shape the destiny of The Park.
+
+---
+title: Kitchen
+---
+The aroma of freshly brewed coffee fills the air as you make your way to the kitchen. Your first day as the head of Park development awaits.
+
+-> dialogue
+Inner Thoughts: It's not just a job; it's a responsibility to balance the needs of the park, the visitors, and the delicate ecosystems.
+
+---
+title: OutsideHouse
+---
+The front door opens to a breathtaking view of The Park. The chirping of birds and the rustle of leaves create a serene atmosphere. The Visitor Center, the heart of the park, is visible in the distance.
+
+-> dialogue
+Inner Thoughts: You take a deep breath, ready to face the challenges and make the decisions that will define the future of The Park.
+
+---
+title: VisitorCenter
+---
+As you approach the Visitor Center, colleagues and tourists buzz with anticipation. The park's destiny is now in your hands.
+
+-> dialogue
+Colleague: "Good morning! Emily is waiting for you inside. She's eager to discuss the focus for the upcoming weeks."
+
+-> end
+===
