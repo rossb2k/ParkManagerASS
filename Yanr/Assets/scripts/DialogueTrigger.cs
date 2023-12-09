@@ -15,7 +15,7 @@ public class DialogueTrigger : MonoBehaviour
         if (col.gameObject.name == "visitor center")
         {
             Debug.Log("collision");
-            dialogueRunner.StartDialogue("Start");
+            dialogueRunner.StartDialogue("WeekOne");
         }
 
         if (col.gameObject.name == "wildlife center")
