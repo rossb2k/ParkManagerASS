@@ -1,7 +1,8 @@
 {
   "projectFileVersion": 2,
   "sourceFiles": [
-    "Start.yarn"
+    "Start.yarn",
+    "WeekOne.yarn"
   ],
   "excludeFiles": [],
   "localisation": {},

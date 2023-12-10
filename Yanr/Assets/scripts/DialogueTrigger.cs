@@ -9,6 +9,10 @@ public class DialogueTrigger : MonoBehaviour
 
     public DialogueRunner dialogueRunner;
 
+    void Start(){
+        dialogueRunner.StartDialogue("Start");
+    }
+
     // Update is called once per frame
     void OnTriggerEnter(Collider col)
     {
@@ -18,17 +22,33 @@ public class DialogueTrigger : MonoBehaviour
             dialogueRunner.StartDialogue("WeekOne");
         }
 
+        if (col.gameObject.name == "w1small")
+        {
+            dialogueRunner.StartDialogue("WeekOneSmall");
+        }
+
         if (col.gameObject.name == "wildlife center")
         {
             Debug.Log("collision");
-            dialogueRunner.StartDialogue("WeekTwoBigDecisions");
+            dialogueRunner.StartDialogue("WeekTwo");
             
+        }
+
+        if (col.gameObject.name == "w2small")
+        {
+            dialogueRunner.StartDialogue("WeekTwoSmall");
         }
 
         if (col.gameObject.name == "tourism center")
         {
             Debug.Log("collision");
+            dialogueRunner.StartDialogue("WeekThreeBig");
             
+        }
+
+        if (col.gameObject.name == "w3small")
+        {
+            dialogueRunner.StartDialogue("WeekThreeSmall");
         }
     }
 }
