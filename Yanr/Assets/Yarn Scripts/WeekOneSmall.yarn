@@ -1,67 +1,51 @@
 ﻿title: WeekOneSmall
 ---
--> dialogue Emily
 
 "Hey, it's Emily. I've got a few small decisions that need your input. Over."
 
--> scene radio_transmission
----
-title: SmallDecision1
----
-dialogue:
-  "First up, we've got a proposal to open a new hiking trail. It could attract more visitors. What's your take?"
----
-title: InnerDialogueChoices1
----
-* [[Open the new hiking trail]]:
-    * -> set small_decision = "tourism"
-    * -> goto SmallDecisionMade
+ "First up, we've got a proposal to open a new hiking trail. It could attract more visitors. What's your take?"
 
-* [[Preserve the natural habitat]]:
-    * -> set small_decision = "conservation"
-    * -> goto SmallDecisionMade
+->Open the new hiking trail
+  <<jump SmallDecisionTrail>>
+
+->Preserve the natural habitat
+  <<jump SmallDecisionHabitat>>
+===
+
+title: SmallDecisionTrail
 ---
-title: SmallDecisionMade
+
+  "Ok so we will get to work on mapping and marking that new hiking trail out. Thanks for the input!"
+===
+
+title: SmallDecisionHabitat
 ---
-dialogue:
-  "Decision noted. Let's move on."
----
-title: SmallDecision2
----
-dialogue:
+ "It looks like we want to hold off on that hiking trail to allow for the natural habitat to remain undisturbed. This will help the animals have free roam but may affect our ability to draw new tourists."
+ ===
+
+
   "Next, we've got a request to organize a guided wildlife tour. It could educate visitors about our conservation efforts. What's your call?"
----
-title: InnerDialogueChoices2
----
-* [[Organize the guided wildlife tour]]:
-    * -> set small_decision = "conservation"
-    * -> goto SmallDecisionMade2
 
-* [[Focus on self-guided experiences]]:
-    * -> set small_decision = "tourism"
-    * -> goto SmallDecisionMade2
----
-title: SmallDecisionMade2
----
-dialogue:
-  "Thanks for the input. One more to go."
----
-title: SmallDecision3
----
-dialogue:
-  "Last one, we're considering a temporary closure of a popular area for habitat restoration. How do you want to proceed?"
----
-title: InnerDialogueChoices3
----
-* [[Temporarily close the area for restoration]]:
-    * -> set small_decision = "conservation"
-    * -> goto SmallDecisionMade3
 
-* [[Keep the area open for visitors]]:
-    * -> set small_decision = "tourism"
-    * -> goto SmallDecisionMade3
+->Organize a guided wildlife tour
+<<jump Tour>>
+->Focus on self guided experiences
+<<jump Self>>
+
+===
+title: Tour
+
+"A guided wildlife tour can help bring tourists into the Park while also educating them about the natural habitats and animals who reside in the park. I think its a great idea that you are onboard. We will begin work on it!"
+
 ---
-title: SmallDecisionMade3
+
+===
+title: Self
+
+"I understand the hesitation to organize a guided wildlife tour, allowing visitors to experience the park at their own pace and in their own way is a better experience for most."
+
 ---
-dialogue:
-  "Got it. That's all for the small decisi
+  
+  "Got it thanks! That's all for now."
+
+===

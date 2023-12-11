@@ -1,58 +1,43 @@
 ﻿title: WeekOne
 ---
--> scene visitor_center
 
 You enter the bustling Visitor Center, ready to make your mark on The Park's future. Emily greets you with a stack of reports in hand.
 
--> dialogue Emily
-
-"Good to see you! The first decision is crucial. What will be our focus this week?"
-
-* [[Invest in Tourism Infrastructure]]:
-    * -> set decision = "tourism"
-    * -> goto ChoicesMade
-
-* [[Wildlife Conservation Initiatives]]:
-    * -> set decision = "conservation"
-    * -> goto ChoicesMade
-
-* [[Controlled Tourism Expansion with Conservation Measures]]:
-    * -> set decision = "balanced"
-    * -> goto ChoicesMade
-
--> dialogue Emily
-
-Emily awaits your decision, "So, what's our plan for this week?"
-
-* [[We'll invest in tourism infrastructure.]]:
-  * -> goto InvestInTourism
-
-* [[Let's focus on wildlife conservation initiatives.]]:
-  * -> goto WildlifeConservation
-
-* [[We'll pursue controlled tourism expansion with conservation measures.]]:
-  * -> goto ControlledTourismExpansion
+You see your colleague Emily wave to you. ""Good to see you! I hope you are ready for the responsibility of running the Park. The first decision is crucial. While we want to bring plenty of tourists to enjoy our parks we need to be mindful of the impact on our wildlife. What will be our focus for this week?"
 
 
-You decide to prioritize tourism infrastructure. "We need to attract more visitors to support the park."
-
-
-Emily nods, "Improving amenities might boost tourism. But remember, it could impact local habitats."
-
--> end
-
-You choose to intensify wildlife conservation efforts. "We must safeguard the park's ecosystems for the long term."
-
-Emily agrees, "Conserving wildlife is crucial, but it might decrease immediate tourism. We'll need to find a balance."
-
--> end
-
-
-You opt for controlled tourism expansion with conservation measures. "Let's welcome visitors responsibly, with strict regulations."
-
-
-Emily remarks, "A balanced approach. Just be cautious with the regulations; it's a delicate balance to strike."
-
--> end
+->Invest In Tourism
+<<jump InvestInTourism>>
+->Invest in Wildlife Conservation
+<<jump WildlifeConservation>>
+->Invest in Controlled Tourism Expanision with Strong Consveration Measures
+<<jump ControlledTourismExpansion>>
 
 ===
+title: InvestInTourism
+---
+        You decide to prioritize tourism infrastructure. It is imperative to attract new visitors to support the park.
+
+        Emily nods, 'Improving amenities might boost tourism. But remember, it could impact local habitats.'
+
+        You decide that prioritizing tourism is key to saving the park. New funding will be used to improve exisiting amenities, while helping to create new ones.
+
+===
+title: WildlifeConservation
+---
+
+        You choose to intensify wildlife conservation efforts. We must safeguard the park's ecosystems for the long term. Focusing on strengthening our ecological protections and improving the ecosystem of the park is what's needed. 
+
+        "Emily agrees, 'Conserving wildlife is crucial, but it might decrease immediate tourism. We'll need to find a balance, or else we may lose funding to continue these projects'"
+
+        With new funding the Park will be able to create new scientific initiatives to help the ecosystem of the park. Creating and lobbying for environimental protections will be key to conservation efforts. 
+===
+title: ControlledTourismExpansion
+---
+    
+
+        "You opt for controlled tourism expansion with conservation measures. 'Let's welcome visitors responsibly, with strict regulations.'"
+
+        "Emily remarks, 'A balanced approach. Just be cautious with the regulations; it's a delicate balance to strike.'"
+
+        ===
